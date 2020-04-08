@@ -49,7 +49,7 @@ button:focus {
 .site--content a { color: #87ed87; }
 .site--content a:hover { text-decoration: none; color: #1888f0; }
 
-.coming-soon { background-color: #FCFEFC; height: calc(100vh - 130px); }
+.coming-soon { background-color: #FCFEFC; }
 .coming-soon .site--content { text-align: center; }
 .coming-soon .site--content h1 { font-size: 35px; }
 
