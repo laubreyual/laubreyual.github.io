@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio | Laubrey Ual</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;display=swap" rel="stylesheet">
+<link href="css/index.css" type="text/css" rel="stylesheet">
+<link href="css/bootstrap.addon.css" type="text/css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/b00471d44e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar fixed-top navbar-expand-lg bg-dark">
+	<div class="container">
+		<div class="navbar-brand"><a class="logo" href="#">L A U B R E Y</a></div>
+		<button
+			class="navbar-toggler"
+			type="button"
+			data-toggle="collapse"
+			data-target="#menu"
+			aria-controls="navbarSupportedContent"
+			aria-expanded="false"
+			aria-label="Toggle navigation"
+			onclick="changeIcon()">
+			<span class="fa fa-bars" id="trigger"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="menu">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Resume</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Designs
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Product</a>
+						<a class="dropdown-item" href="#">Graphics</a>
+						<a class="dropdown-item" href="#">PowerPoint Presentations</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+<!-- BANNER -->
+<div class="hero-banner">
+	<div class="container hero-banner--content text-center">
+		<h1>Old School Designing</h1>
+	</div>
+</div>
+
+
+<!-- TOP DESIGNS -->
+<div class="top-designs">
+	<div class="site--content">
+		<h1 class="text-center">Top Designs</h1>
+		<div class="visible-xs block-grid-xs-1">
+			<div class="block-grid-item">
+				<div class="dropdown">
+		            <button 
+		              class="tag dropdown-toggle" 
+		              type="button" 
+		              id="search-designs-dp" 
+		              data-toggle="dropdown" 
+		              aria-haspopup="true" 
+		              aria-expanded="true">
+		                <span class="dropdown-label label-designs" >Product</span>
+		                <span class="caret text-right"></span>
+		            </button>
+		            <div class="dropdown-menu scrollable-menu designs-option" aria-labelledby="search-designs-dp">
+		                <input name="cat" value="" type="hidden" />
+		                <div class="row">
+		                    <div class="col-xs-12">
+		                        <ul class="list-unstyled">
+		                            <li class="class-cat"><a href="#product" data-toggle="tab">Product Designs</a></li>
+		                            <li class="class-cat"><a href="#graphic" data-toggle="tab">Graphic Designs</a></li>
+		                            <li class="class-cat"><a href="#ppt" data-toggle="tab">PowerPoint Presentations</a></li>
+		                        </ul>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+	    </div>
+		<div class="design-tabs">
+			<ul class="hidden-xs list-unstyled nav nav-tabs tabs">
+				<li class="nav-item tab-item">
+					<a href="#product" data-toggle="tab" class="nav-link active">
+						<div class="tab tab-product">
+							<span>Product Designs</span>
+						</div>
+					</a>
+				</li>
+				<li class="nav-item tab-item">
+					<a href="#graphic" data-toggle="tab" class="nav-link">
+						<div class="tab tab-graphic">
+							<span>Graphic Designs</span>
+						</div>
+					</a>
+				</li>
+				<li class="nav-item tab-item">
+					<a href="#ppt" data-toggle="tab" class="nav-link">
+						<div class="tab tab-ppt">
+							<span>PowerPoint Presentations</span>
+						</div>
+					</a>
+				</li>
+		  	</ul>
+		</div>
+		<div class="tab-content">
+			<div id="product" class="tab-pane active category-container">
+				<ul class="block-grid-xs-1 block-grid-sm-3 block-grid-md-3">
+					<!-- CATEGORY 1 -->
+					<li class="block-grid-item">
+						<a>
+							<div class="category-cards">
+								<div class="category-img" style="background-image: url('img/common-local-microsite/silverjobs/category-2.jpg');"></div>
+								<div class="row category-body">
+									<div class="col-xs-10 col-sm-10 col-md-10 category-details short-line">
+										<h4 class="category-name">Administrative</h4>
+										<p class="jobs-available">3 Jobs Available</p>
+									</div>
+									<div class="col-xs-2 col-sm-2 col-md-2 category-link">
+										<i class="fas fa-arrow-right category-arrow"></i>
+									</div>
+								</div>
+							</div>	
+						</a>
+					</li>
+					<!-- CATEGORY 2 -->
+					<li class="block-grid-item">
+						<a>
+							<div class="category-cards">
+								<div class="category-img" style="background-image: url('img/common-local-microsite/silverjobs/category-11.jpg');"></div>
+								<div class="row category-body">
+									<div class="col-xs-10 col-sm-10 col-md-10 category-details short-line">
+										<h4 class="category-name">Food &amp; Beverages</h4>
+										<p class="jobs-available">6 Jobs Available</p>
+									</div>
+									<div class="col-xs-2 col-sm-2 col-md-2 category-link">
+										<i class="fas fa-arrow-right category-arrow"></i>
+									</div>
+								</div>
+							</div>	
+						</a>
+					</li>
+					<!-- CATEGORY 3 -->
+					<li class="block-grid-item">
+						<a>
+							<div class="category-cards">
+								<div class="category-img" style="background-image: url('img/common-local-microsite/silverjobs/category-1.jpg');"></div>
+								<div class="row category-body">
+									<div class="col-xs-10 col-sm-10 col-md-10 category-details short-line">
+										<h4 class="category-name">Finance</h4>
+										<p class="jobs-available">5 Jobs Available</p>
+									</div>
+									<div class="col-xs-2 col-sm-2 col-md-2 category-link">
+										<i class="fas fa-arrow-right category-arrow"></i>
+									</div>
+								</div>
+							</div>	
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="graphic" class="tab-pane category-container">
+				<ul class="block-grid-xs-1 block-grid-sm-3 block-grid-md-3">
+					<!-- LOCATION 1 -->
+					<li class="block-grid-item">
+						<a>
+							<div class="category-cards">
+								<div class="row category-body">
+									<div class="col-xs-10 col-sm-10 col-md-10 category-details short-line">
+										<h4 class="category-name">Ang Mio Kio</h4>
+										<p class="jobs-available">3 Jobs Available</p>
+									</div>
+									<div class="col-xs-2 col-sm-2 col-md-2 category-link">
+										<i class="fas fa-arrow-right category-arrow"></i>
+									</div>
+								</div>
+							</div>	
+						</a>
+					</li>
+					<!-- LOCATION 2 -->
+					<li class="block-grid-item">
+						<a>
+							<div class="category-cards">
+								<div class="row category-body">
+									<div class="col-xs-10 col-sm-10 col-md-10 category-details short-line">
+										<h4 class="category-name">Bedok</h4>
+										<p class="jobs-available">13 Jobs Available</p>
+									</div>
+									<div class="col-xs-2 col-sm-2 col-md-2 category-link">
+										<i class="fas fa-arrow-right category-arrow"></i>
+									</div>
+								</div>
+							</div>	
+						</a>
+					</li>
+					<!-- LOCATION 3 -->
+					<li class="block-grid-item">
+						<a>
+							<div class="category-cards">
+								<div class="row category-body">
+									<div class="col-xs-10 col-sm-10 col-md-10 category-details short-line">
+										<h4 class="category-name">Bishan</h4>
+										<p class="jobs-available">5 Jobs Available</p>
+									</div>
+									<div class="col-xs-2 col-sm-2 col-md-2 category-link">
+										<i class="fas fa-arrow-right category-arrow"></i>
+									</div>
+								</div>
+							</div>	
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="ppt" class="tab-pane category-container">
+				<ul class="block-grid-xs-1 block-grid-sm-3 block-grid-md-3">
+					<!-- EMPLOYMENT TYPE 1 -->
+					<li class="block-grid-item">
+						<a>
+							<div class="category-cards">
+								<div class="row category-body">
+									<div class="col-xs-10 col-sm-10 col-md-10 category-details">
+										<h4 class="category-name">Full Time</h4>
+										<p class="jobs-available">98 Jobs Available</p>
+									</div>
+									<div class="col-xs-2 col-sm-2 col-md-2 category-link">
+										<i class="fas fa-arrow-right category-arrow"></i>
+									</div>
+								</div>
+							</div>	
+						</a>
+					</li>
+					<!-- EMPLOYMENT TYPE 2 -->
+					<li class="block-grid-item">
+						<a>
+							<div class="category-cards">
+								<div class="row category-body">
+									<div class="col-xs-10 col-sm-10 col-md-10 category-details">
+										<h4 class="category-name">Part Time</h4>
+										<p class="jobs-available">73 Jobs Available</p>
+									</div>
+									<div class="col-xs-2 col-sm-2 col-md-2 category-link">
+										<i class="fas fa-arrow-right category-arrow"></i>
+									</div>
+								</div>
+							</div>	
+						</a>
+					</li>
+					<!-- EMPLOYMENT TYPE 3 -->
+					<li class="block-grid-item">
+						<a>
+							<div class="category-cards">
+								<div class="row category-body">
+									<div class="col-xs-10 col-sm-10 col-md-10 category-details">
+										<h4 class="category-name">Contract</h4>
+										<p class="jobs-available">25 Jobs Available</p>
+									</div>
+									<div class="col-xs-2 col-sm-2 col-md-2 category-link">
+										<i class="fas fa-arrow-right category-arrow"></i>
+									</div>
+								</div>
+							</div>	
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="big-btn">
+				<button class="btn btn-primary btn-block input-lg">
+		            View All Designs&nbsp;&nbsp;<i class="fas fa-arrow-right"></i>
+		        </button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- SUB BANNER -->
+<div class="sub-banner">
+	<div class="container site--content">
+
+	</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+      	<div class="row">
+      		<div class="col-xs-12 col-sm-12 col-md-6 text-center-xs text-center-sm footer-text">
+      			&copy; 2020, Laubrey Ual. All Rights Reserved.
+      		</div>
+      		<div class="col-xs-12 col-sm-12 col-md-6 text-right text-center-xs text-center-sm">
+      			<ul class="footer-links">
+      				<li>
+      					<a href="tel:+639451335771" data-toggle="tooltip" data-placement="top" title="Call me!"><i class="fas fa-mobile-alt" style="color: #ade1cd;"></i></a>
+      				</li>
+      				<li>
+      					<a href="https://www.linkedin.com/in/lmuual/" target="_blank" data-toggle="tooltip" data-placement="top" title="View my Linkedin Profile!"><i class="fab fa-linkedin" style="color: #0e76a8;"></i></a>
+      				</li>
+      				<li>
+      					<a href="mailto:luual@up.edu.ph" data-toggle="tooltip" data-placement="top" title="Email me!"><i class="far fa-envelope" style="color: #d44638;"></i></a>
+      				</li>
+      			</ul>
+      		</div>
+      	</div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
