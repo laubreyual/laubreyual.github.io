@@ -37,17 +37,21 @@ button:focus {
 .bg-dark { background-color: #000 !important; }
 .bg-light { background-color: #fff !important; }
 
-.btn-primary { background-color: #1888f0 !important; font-weight: 900; border: none !important; }
+.btn-primary { background-color: #1888f0 !important; color: #fff !important; font-weight: 900; border: none !important; }
 .big-btn {
 	display: block;
 	width: 20%;
 	margin: 0 auto;
-	padding: 20px 0;
+	padding: 40px 0 20px;
 }
 
 .site--content { padding: 30px 0px; }
 .site--content a { color: #87ed87; }
 .site--content a:hover { text-decoration: none; color: #1888f0; }
+
+.coming-soon { background-color: #FCFEFC; height: calc(100vh - 130px); }
+.coming-soon .site--content { text-align: center; }
+.coming-soon .site--content h1 { font-size: 35px; }
 
 /*-----------------------------------------------------------------------------------*/
 /*	Navigation
@@ -88,6 +92,10 @@ button:focus {
 .navbar .navbar-toggler:focus {
 	background-color: #fff !important;
 }
+.navbar .navbar-collapse .dropdown-menu a:hover {
+	background-color: #87ed87;
+	opacity: 0.8;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*	Footer
@@ -115,13 +123,14 @@ button:focus {
 /*-----------------------------------------------------------------------------------*/
 .sub-banner {
 	background-image: linear-gradient(270deg, rgba(0,43,69,1) 0%, rgba(24,136,240,1) 35%, rgba(135,237,135,1) 100%);
-	min-height: 200px;
+	min-height: 400px;
 }
 .sub-banner .site--content {
 	color: #fff;
 	text-align: center;
-	padding: 50px 0px;
+	padding-top: 150px;
 }
+.sub-banner .site--content h1 { font-size: 35px; }
 
 /*-----------------------------------------------------------------------------------*/
 /*	Home Specific
@@ -232,47 +241,75 @@ button:focus {
     border: solid 2px #555;
     margin-top: 9px;
 }
-.category-container {
+.designs-container {
 	display: block;
 	width: 95%;
 	margin: 0 auto;
 	padding: 20px 0px;
 }
-.category-container .category-cards {
+.designs-container .designs-cards {
 	border-radius: 5px;
 	border: solid 1px #ccc;
 	background-color: #fff;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
-.category-container .category-cards .category-img {
+.designs-container .designs-cards .designs-img {
 	background-repeat: no-repeat;
   	background-position: center left;
   	background-size: cover;
   	width: 100%;
-  	height: 90px;
+  	height: 243px;
 }
-.category-container .category-cards .row .category-details {
+.designs-container .designs-cards .row .designs-details {
 	padding-left: 30px;
     padding-right: 0px;
 }
-.category-container .category-cards .row .short-line { padding-top: 10px; }
-.category-container .category-cards .row .category-link {
+.designs-container .designs-cards .row .short-line { padding-top: 10px; }
+.designs-container .designs-cards .row .designs-link {
 	padding-left: 0px;
 }
-.category-name {
-	color: #3428c9;
+.designs-name {
+	color: #1888f0;
 	margin-bottom: 5px;
     margin-top: 15px;
 }
-.jobs-available { color: #000; }
-.category-arrow {
+.designs-arrow {
 	position: relative;
-  	border-radius: 50%;
-	background-color: #b40000;
-	color: #fff;
-	font-size: 16px;
-	text-align: center;
-	padding: 10px 11px;
-	margin-top: 100%;
-	left: -20px;
+    border-radius: 50%;
+    background-color: #aaa;
+    color: #FFD700;
+    font-size: 35px;
+    text-align: center;
+    padding: 15px 13px;
+    left: -25px;
+    top: -35px;
+}
+#ppt .big-btn { width: 25%; }
+
+.devices {
+	background-image: url('../img/devices.png');
+	background-repeat: no-repeat;
+  	background-position: center left;
+  	background-size: cover;
+  	min-height: 315px;
+  	margin-top: 85px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	Resume Specific
+/*-----------------------------------------------------------------------------------*/
+.resume .site--content { text-align: center; }
+
+/*-----------------------------------------------------------------------------------*/
+/*	Designs Specific
+/*-----------------------------------------------------------------------------------*/
+.product-designs .designs-container,
+.graphic-designs .designs-container,
+.ppt-designs .designs-container { 
+	width: 100%;
+}
+.product-designs .designs-container .designs-cards .designs-img,
+.graphic-designs .designs-container .designs-cards .designs-img,
+.ppt-designs .designs-container .designs-cards .designs-img {
+	height: 200px;
 }
