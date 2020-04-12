@@ -22,7 +22,8 @@ a, a:hover { text-decoration: none; }
 
 strong { font-weight: 900; }
 
-button:focus { 
+button:focus,
+video:focus {
 	outline: none !important; 
 }
 
