@@ -263,6 +263,7 @@ video:focus {
 	border: solid 1px #ccc;
 	background-color: #fff;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+	min-height: 94px;
 }
 .designs-container .designs-cards .designs-img {
 	background-repeat: no-repeat;
@@ -277,6 +278,7 @@ video:focus {
 }
 .designs-container .designs-cards .row .short-line { padding-top: 10px; }
 .designs-container .designs-cards .row .not-featured { padding-top: 10px; padding-bottom: 20px; }
+.designs-container .designs-cards .row .one-line { margin-top: 10px; }
 .designs-container .designs-cards .row .designs-link {
 	padding-left: 0px;
 }
